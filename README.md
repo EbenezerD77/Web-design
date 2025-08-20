@@ -9,12 +9,14 @@ Title: Carwash Booking and Payment
 This repository contains the files for our first web development assignment. The goal was to create a website using HTML and CSS to demonstrate foundational skills in web page structure and styling.
 <br>
 <br>
-## Project Contents    
+## Project Contents   
+ 
 This project contains html files uner html folder and css files under styles folder. 
 
 <br>
 <br>
-## How to View     
+##How to View     
+
 To view the website, download or clone the repository and open the homepage.html file in your preferred web browser.
 <br>
 <br>
