@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carwash Staff Dashboard</title>
+  <link rel="stylesheet" href="./Admin-dashboard.css">
+</head>
+<body>
+  
+
+  <aside class="sidebar">
+    <h2>Crystal Admin</h2>
+    <nav>
+      <ul>
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="./Admin-Bookings.html" >Bookings</a></li>
+        <li><a href="./Admin-ScanQR.html" >Scan QR</a></li>
+        <li><a href="./Admin-Reports.html" >Reports</a></li>
+        <li><a href="./Admin-Profile.html">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+
+  <main class="main-content">
+
+
+    <header class="topbar">
+      <h1>Dashboard</h1>
+      <div class="user-info">
+        <span>Welcome, Staff</span>
+        
+      </div>
+    </header>
+
+    
+    <section class="stats">
+      <div class="card">
+        <h3>Scheduled Today</h3>
+        <p>12</p>
+      </div>
+      <div class="card">
+        <h3>Completed</h3>
+        <p>7</p>
+      </div>
+      <div class="card">
+        <h3>Pending</h3>
+        <p>5</p>
+      </div>
+    </section>
+
+    
+    <section class="bookings">
+      <h2>Today's Bookings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Customer</th>
+            <th>Plate No.</th>
+            <th>Service</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09:00 AM</td>
+            <td>Olivia Cole</td>
+            <td>AB123CD</td>
+            <td>Signature Clean</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="btn-small">Mark In Progress</button></td>
+          </tr>
+          <tr>
+            <td>10:30 AM</td>
+            <td>Evan White</td>
+            <td>EF456GH</td>
+            <td>Express Wash</td>
+            <td><span class="status progress">In Progress</span></td>
+            <td><button class="btn-small">Mark Completed</button></td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td>John Doe</td>
+            <td>IJ789KL</td>
+            <td>Showroom Shine</td>
+            <td><span class="status completed">Completed</span></td>
+            <td><button class="btn-small disabled">Done</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+    <section class="scanner">
+      <h2>Scan QR Code</h2>
+      <div class="scanner-box">
+        <p>Camera</p>
+        <button class="btn-scan">Open Camera</button>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

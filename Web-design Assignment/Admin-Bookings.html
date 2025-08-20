@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Bookings</title>
+  <link rel="stylesheet" href="./admin-bookings.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <aside class="sidebar">
+    <h2>Crystal Admin</h2>
+    <nav>
+      <ul>
+        <li><a href="./Admin-Dashboard.html">Dashboard</a></li>
+        <li class="active"><a href="#">Bookings</a></li>
+        <li><a href="./Admin-ScanQR.html">Scan QR</a></li>
+        <li><a href="./Admin-Reports.html">Reports</a></li>
+        <li><a href="./Admin-Settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <h1>Bookings</h1>
+      <div class="user-info">
+        <span>Welcome, Staff</span>
+      </div>
+    </header>
+
+    <section class="controls-section">
+      <div class="filter-controls">
+        <label for="date-filter">View Bookings For:</label>
+        <input type="date" id="date-filter" name="date-filter">
+      </div>
+      <div class="search-and-status">
+        <input type="text" placeholder="Search by customer or plate number..." class="search-bar">
+        <select class="status-filter">
+          <option value="all">All Statuses</option>
+          <option value="pending">Pending</option>
+          <option value="progress">In Progress</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="bookings-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Customer</th>
+            <th>Plate No.</th>
+            <th>Service</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09:00 AM</td>
+            <td>Olivia Cole</td>
+            <td>AB123CD</td>
+            <td>Signature Clean</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="btn-small">Mark In Progress</button></td>
+          </tr>
+          <tr>
+            <td>10:30 AM</td>
+            <td>Evan White</td>
+            <td>EF456GH</td>
+            <td>Express Wash</td>
+            <td><span class="status progress">In Progress</span></td>
+            <td><button class="btn-small">Mark Completed</button></td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td>John Doe</td>
+            <td>IJ789KL</td>
+            <td>Showroom Shine</td>
+            <td><span class="status completed">Completed</span></td>
+            <td><button class="btn-small disabled">Done</button></td>
+          </tr>
+          <tr>
+            <td>01:00 PM</td>
+            <td>Jane Smith</td>
+            <td>MN012OP</td>
+            <td>Signature Clean</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="btn-small">Mark In Progress</button></td>
+          </tr>
+          <tr>
+            <td>02:30 PM</td>
+            <td>Mike Ross</td>
+            <td>QR345ST</td>
+            <td>Showroom Shine</td>
+            <td><span class="status progress">In Progress</span></td>
+            <td><button class="btn-small">Mark Completed</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>

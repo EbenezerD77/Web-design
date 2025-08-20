@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Reports</title>
+  <link rel="stylesheet" href="./Admin-Reports.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <aside class="sidebar">
+    <h2>Crystal Admin</h2>
+    <nav>
+      <ul>
+        <li><a href="./Admin-Dashboard.html">Dashboard</a></li>
+        <li><a href="./Admin-Bookings.html">Bookings</a></li>
+        <li><a href="./Admin-ScanQR.html">Scan QR</a></li>
+        <li class="active"><a href="#">Reports</a></li>
+        <li><a href="./Admin-Settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <h1>Reports</h1>
+      <div class="user-info">
+        <span>Welcome, Staff</span>
+      </div>
+    </header>
+
+    <section class="controls-section">
+      <div class="filter-controls">
+        <label for="date-range">Date Range:</label>
+        <input type="date" id="start-date" name="start-date">
+        <span>to</span>
+        <input type="date" id="end-date" name="end-date">
+      </div>
+      <select class="report-type">
+        <option value="daily">Daily Report</option>
+        <option value="weekly">Weekly Report</option>
+        <option value="monthly">Monthly Report</option>
+        <option value="yearly">Yearly Report</option>
+      </select>
+    </section>
+
+    <section class="reports-grid">
+      <div class="report-card">
+        <h3>Service Popularity</h3>
+        <div class="chart-placeholder">
+          <p>[ Bar Chart Placeholder ]</p>
+        </div>
+      </div>
+      <div class="report-card">
+        <h3>Revenue Summary</h3>
+        <div class="data-summary">
+          <p>Total Revenue: <strong>$1,500.00</strong></p>
+          <p>Avg. Per Booking: <strong>$50.00</strong></p>
+        </div>
+      </div>
+      <div class="report-card">
+        <h3>Booking Status Overview</h3>
+        <div class="chart-placeholder">
+          <p>[ Pie Chart Placeholder ]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="detailed-report">
+      <h2>Financial Breakdown</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Service</th>
+            <th>Revenue</th>
+            <th>Bookings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aug 20, 2025</td>
+            <td>Signature Clean</td>
+            <td>$750.00</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Aug 20, 2025</td>
+            <td>Express Wash</td>
+            <td>$300.00</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Aug 20, 2025</td>
+            <td>Showroom Shine</td>
+            <td>$450.00</td>
+            <td>8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>

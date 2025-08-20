@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="./Customer-orders.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+
+            <div class="logo-container">
+                <img src="./Assets/Brand-logo.png" class="logo"/>
+            </div>
+
+            <div class="nav-links">
+                <a class="nav-a" href="./homepage.html">Home</a>
+                <a class="nav-a" href="./Services.html">Services</a>
+                <a class="nav-a" href="./AboutUs.html">About Us</a>
+                <a class="nav-a" href="./ContactUs.html">Contact Us</a>
+            </div>
+
+            <div class="button-section">
+                <div class="button-section-div">
+                    <a href="./customer-profile.html" class="btn btn-primary-second">My Profile</a>
+                </div>
+                <div class="button-section-div">
+                    <a href="./login.html" class="btn btn-primary">Log out</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content-user">
+        <div class="orders-container">
+            <h1>My Orders</h1>
+            
+            <div class="orders-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Signature Clean</td>
+                            <td>Aug 22, 2025</td>
+                            <td>10:00 AM</td>
+                            <td><span class="status upcoming">Upcoming</span></td>
+                            <td><button class="btn-action">Cancel</button></td>
+                        </tr>
+                        <tr>
+                            <td>The Express Wash</td>
+                            <td>Aug 15, 2025</td>
+                            <td>02:30 PM</td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td><button class="btn-action-disabled">Done</button></td>
+                        </tr>
+                        <tr>
+                            <td>The Showroom Shine</td>
+                            <td>Jul 28, 2025</td>
+                            <td>09:00 AM</td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td><button class="btn-action-disabled">Done</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="./Assets/Brand-logo.png" alt="Crystal Carwash Logo" class="footer-logo">
+                <p>Where every car gets the crystal treatment.</p>
+                <p>We are committed to providing premium car cleaning services with an 
+                    eco-friendly approach and a focus on customer satisfaction.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./homepage.html">Home</a></li>
+                    <li><a href="./Services.html">Services</a></li>
+                    <li><a href="./AboutUs.html">About Us</a></li>
+                    <li><a href="./ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get in Touch</h3>
+                <p>Phone: +251 11 629 5506</p>
+                <p>Email: info@crystalcarwash.com </p>
+                <p>Address: Imperial, Addis Ababa </p>
+                <div class="social-icons">
+                    <a href="#"><img src="./Assets/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./Assets/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="./Assets/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Crystal Carwash. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

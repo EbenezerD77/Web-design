@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Profile</title>
+  <link rel="stylesheet" href="./Admin-profile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <aside class="sidebar">
+    <h2>Crystal Admin</h2>
+    <nav>
+      <ul>
+        <li><a href="./Admin-Dashboard.html">Dashboard</a></li>
+        <li><a href="./Admin-Bookings.html">Bookings</a></li>
+        <li><a href="./Admin-ScanQR.html">Scan QR</a></li>
+        <li><a href="./Admin-Reports.html">Reports</a></li>
+        <li class="active"><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <h1>My Profile</h1>
+      <div class="user-info">
+        <span>Welcome, Staff</span>
+      </div>
+    </header>
+
+    <section class="profile-grid">
+      
+      <div class="profile-card profile-info">
+        <h3>Personal Information</h3>
+        <div class="profile-avatar">
+          </div>
+        <form class="profile-form">
+          <div class="form-group">
+            <label for="profile-name">Name</label>
+            <input type="text" id="profile-name" value="Staff Admin">
+          </div>
+          <div class="form-group">
+            <label for="profile-email">Email</label>
+            <input type="email" id="profile-email" value="staff.admin@crystalcarwash.com">
+          </div>
+          <button type="submit" class="btn-primary">Update Profile</button>
+        </form>
+      </div>
+
+      <div class="profile-card">
+        <h3>Change Password</h3>
+        <form class="profile-form">
+          <div class="form-group">
+            <label for="current-password">Current Password</label>
+            <input type="password" id="current-password">
+          </div>
+          <div class="form-group">
+            <label for="new-password">New Password</label>
+            <input type="password" id="new-password">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm New Password</label>
+            <input type="password" id="confirm-password">
+          </div>
+          <button type="submit" class="btn-primary">Change Password</button>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
