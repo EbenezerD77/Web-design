@@ -55,6 +55,10 @@ a{
     margin-right: -20px;
 }
 
+.button-section a button:hover{
+    cursor: pointer;
+}
+
 
 .btn-primary, .btn-primary-second{
     color: white;
